@@ -1,5 +1,8 @@
+import sys
+
+
 def main():
-    book_path = "books/frankenstein.txt"
+    book_path = sys.argv[1]
     text = get_book_text(book_path)
     word_count = get_word_count(text)
     char_count = get_chars_count(text)
